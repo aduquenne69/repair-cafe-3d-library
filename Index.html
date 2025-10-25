@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repair Café 3D - Bibliothèque Collaborative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔧 Repair Café 3D</h1>
+            <p class="subtitle">Bibliothèque collaborative d'objets 3D pour la réparation</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Rechercher un objet (ex: poignée, frigo, bouton...)">
+            
+            <div class="filters">
+                <select id="categoryFilter">
+                    <option value="">Toutes catégories</option>
+                    <option value="refrigerateur">Réfrigérateur</option>
+                    <option value="lave-linge">Lave-linge</option>
+                    <option value="cuisine">Petits appareils cuisine</option>
+                    <option value="aspirateur">Aspirateur</option>
+                </select>
+
+                <select id="difficultyFilter">
+                    <option value="">Toutes difficultés</option>
+                    <option value="debutant">Débutant</option>
+                    <option value="intermediaire">Intermédiaire</option>
+                    <option value="avance">Avancé</option>
+                </select>
+
+                <select id="recycledFilter">
+                    <option value="">Filament recyclé</option>
+                    <option value="true">Testé avec recyclé</option>
+                    <option value="false">Non testé</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="resultsCount" class="results-count"></div>
+        
+        <div id="objectsGrid" class="objects-grid"></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Projet open source pour les repair cafés • Contribuez sur <a href="https://github.com" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
